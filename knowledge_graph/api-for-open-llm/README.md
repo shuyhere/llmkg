@@ -17,7 +17,6 @@
   
 ## 🐧 QQ交流群：870207830
 
-
 ## 📢 新闻
 
 + 【2024.01.19】 添加 [InternLM2](https://github.com/InternLM/InternLM) 模型支持，[启动方式](https://github.com/xusenlinzy/api-for-open-llm/blob/master/docs/SCRIPT.md#internlm2)

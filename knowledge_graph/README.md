@@ -1,5 +1,29 @@
 # Convert any Corpus of Text into a *Graph of Knowledge*
 
+
+
+
+## Quick Start
+
+### environment setup
+`conda create -n llmkg python=3.10`
+
+`pip install -r requirements.txt`
+
+### llm server setup
+
+`cd api-for-open-llm`
+edit .env
+then run  `python server.py `
+**llm server will start at localhost:port**
+
+more details on [api-for-open-llm guide](./api-for-open-llm/README.md)
+
+### graph extract
+put the text file in the `data_input` folder and
+run `extract_graph.ipynb`
+
+***
 ![Knowledge Graph Banner](./assets/KG_banner.png)
 *A knowledge graph generated using this code* 
 ghpages link of this graph: https://rahulnyk.github.io/knowledge_graph/
@@ -18,7 +42,8 @@ Source: https://www.ibm.com/topics/knowledge-graph
 5. Populate nodes (concepts) and edges (relations).
 6. Visualise and Query. 
 
-Step 6 is purely optional, but it has certain artistic gratification associated with it. Network graphs are beautiful objects (just look at the banner image above, isn't it beautiful?). Fortunately, there are a good number of Python libraries available for generating graph visualisations. 
+Step 6 is purely optional, but it has certain artistic gratification associated with it. Network graphs are beautiful objects (just look at the banner image above, isn't it beautiful?). Fortunately, there are a good number of Python libraries available for generating graph visualisations.
+
 
 ## Why Graph?
 Once the Knowledge Graph (KG) is build, we can use it for many purposes. We can run graph algorithms and calculate centralities of any node, to understand how important a concept (node) is to this body of work. We can calculate communities to bunch the concepts together to better analyse the text. We can understand the connectedness between seemingly disconnected concepts. 
