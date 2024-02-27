@@ -1,0 +1,62 @@
+node_1|node_2|edge|chunk_id
+tim cook|american business executive|Tim Cook is an American business executive|d2db081da09743fcb7827e1700933507
+tim cook|ceo|Tim Cook has been the Chief Executive Officer of Apple Inc. since August 2011|d2db081da09743fcb7827e1700933507
+tim cook|apple inc.|Tim Cook has been the CEO of Apple Inc. since August 2011|d2db081da09743fcb7827e1700933507
+tim cook|steve jobs|Tim Cook succeeded Steve Jobs as the CEO of Apple Inc.|d2db081da09743fcb7827e1700933507
+tim cook|ibm|Tim Cook served as the Director of North American Fulfillment at IBM|d2db081da09743fcb7827e1700933507
+tim cook|intelligent electronics|Tim Cook worked at Intelligent Electronics as the Chief Operating Officer of the Reseller Division|d2db081da09743fcb7827e1700933507
+tim cook|compaq|Tim Cook worked at Compaq as the Vice President of Corporate Materials|d2db081da09743fcb7827e1700933507
+tim cook|apple|Tim Cook was recruited by Steve Jobs to join Apple in early 1998|d2db081da09743fcb7827e1700933507
+tim cook|senior vice president for worldwide operations|Tim Cook initially served as Senior Vice President for Worldwide Operations at Apple|d2db081da09743fcb7827e1700933507
+tim cook|supplier responsibility programs|Tim Cook led the company's supplier responsibility programs at Apple|d2db081da09743fcb7827e1700933507
+tim cook|macintosh division|Tim Cook took on responsibilities including the Macintosh division at Apple|d2db081da09743fcb7827e1700933507
+tim cook|coo|Tim Cook was promoted to the position of COO at Apple|d2db081da09743fcb7827e1700933507
+tim cook|ceo|Tim Cook holds the position of CEO at Apple|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|iphone x|Tim Cook has overseen the launch of the iPhone X|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|apple watch|Tim Cook has overseen the launch of the Apple Watch|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|apple pay|Tim Cook has overseen the launch of Apple Pay|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|apple music|Tim Cook has overseen the launch of Apple Music|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|apple tv+|Tim Cook has overseen the launch of Apple TV+|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|apple|Tim Cook's leadership has contributed to Apple's success in reaching a $1 trillion market capitalization|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|environmental sustainability|Tim Cook is known for his focus on environmental sustainability|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|social issues|Tim Cook is known for his focus on social issues|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|privacy|Tim Cook has publicly addressed and advocated for privacy|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|encryption|Tim Cook has publicly addressed and advocated for encryption|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|human rights|Tim Cook has publicly addressed and advocated for human rights|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|equality|Tim Cook has publicly addressed and advocated for equality|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|renewable energy|Tim Cook has led Apple's efforts in renewable energy|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|carbon footprint|Tim Cook has led Apple's efforts in reducing the company's carbon footprint|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|lgbtq+ representation|Tim Cook made a significant statement for LGBTQ+ representation by publicly coming out as gay|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|leadership style|Tim Cook's leadership style is described as thoughtful and analytical|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|steve jobs|Tim Cook's leadership style is often contrasted with Steve Jobs' more charismatic and visionary approach|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|teamwork|Tim Cook emphasizes teamwork|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|transparency|Tim Cook emphasizes transparency|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|social responsibility|Tim Cook emphasizes social responsibility|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|personal values|Tim Cook's leadership reflects his personal values|5de5fdde12f745b0b7b14a90b837b22c
+tim cook|apple culture|Tim Cook fosters a culture of teamwork, transparency, and social responsibility at Apple|5de5fdde12f745b0b7b14a90b837b22c
+openai|artificial intelligence (ai)|OpenAI is an AI research laboratory|08d3ccc42d4a44438ef62efc99c5039e
+openai|openai lp|OpenAI LP is a for-profit corporation, a part of OpenAI|08d3ccc42d4a44438ef62efc99c5039e
+openai|openai inc|OpenAI Inc is the parent company of OpenAI|08d3ccc42d4a44438ef62efc99c5039e
+openai|elon musk|OpenAI was founded by Elon Musk|08d3ccc42d4a44438ef62efc99c5039e
+openai|sam altman|OpenAI was founded by Sam Altman|08d3ccc42d4a44438ef62efc99c5039e
+openai|greg brockman|OpenAI was founded by Greg Brockman|08d3ccc42d4a44438ef62efc99c5039e
+openai|ilya sutskever|OpenAI was founded by Ilya Sutskever|08d3ccc42d4a44438ef62efc99c5039e
+openai|wojciech zaremba|OpenAI was founded by Wojciech Zaremba|08d3ccc42d4a44438ef62efc99c5039e
+openai|john schulman|OpenAI was founded by John Schulman|08d3ccc42d4a44438ef62efc99c5039e
+openai|artificial general intelligence (agi)|OpenAI's mission is to ensure that AGI benefits all of humanity|08d3ccc42d4a44438ef62efc99c5039e
+openai|organization|OpenAI is an organization|08d3ccc42d4a44438ef62efc99c5039e
+openai|digital intelligence|OpenAI focuses on advancing digital intelligence|08d3ccc42d4a44438ef62efc99c5039e
+openai|humanity|OpenAI's mission is to benefit humanity|08d3ccc42d4a44438ef62efc99c5039e
+openai|capped profit model|OpenAI shifted to a capped profit model|08d3ccc42d4a44438ef62efc99c5039e
+openai|friendly ai|OpenAI started with the idea of promoting friendly AI|08d3ccc42d4a44438ef62efc99c5039e
+openai|gpt (generative pretrained transformer) series|OpenAI has developed the GPT series|08d3ccc42d4a44438ef62efc99c5039e
+openai|gpt-3|GPT-3 is a well-known version of OpenAI's GPT model|08d3ccc42d4a44438ef62efc99c5039e
+dall·e|neural network-based model|A neural network-based model that can generate images from textual descriptions, demonstrating an advanced understanding of both language and visual concepts.|7953803a1e5e41808226200daedda801
+codex|ai system|This AI system is capable of understanding and generating human-like code, powering tools like GitHub Copilot, which assists developers by suggesting code snippets and entire functions based on the context of the existing code.|7953803a1e5e41808226200daedda801
+github copilot|ai system|GitHub Copilot assists developers by suggesting code snippets and entire functions based on the context of the existing code.|7953803a1e5e41808226200daedda801
+openai|ethical considerations|OpenAI has been at the forefront of ethical considerations in AI development, advocating for safety, transparency, and regulatory measures to ensure that AI technologies are deployed responsibly and without causing harm.|7953803a1e5e41808226200daedda801
+openai|organization|The organization publishes research papers, releases software, and collaborates with other entities in the AI community to advance the field in a direction that is safe and beneficial for everyone.|7953803a1e5e41808226200daedda801
+openai|research papers|The organization publishes research papers.|7953803a1e5e41808226200daedda801
+openai|software|The organization releases software.|7953803a1e5e41808226200daedda801
+sam altman|co-founder|Sam Altman is one of the co-founders of OpenAI.|7953803a1e5e41808226200daedda801
+sam altman|ceo|Sam Altman has served as the CEO, leading the organization through significant growth phases and towards its ambitious goals.|7953803a1e5e41808226200daedda801
