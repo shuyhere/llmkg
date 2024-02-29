@@ -1,0 +1,13 @@
+export OPENAI_API_KEY="sk-"
+
+export OPENAI_API_BASE="https://aigptx.top/v1/"
+export BASE_URL="https://aigptx.top/v1/"
+
+export OPENAI_EMBEDDING_ENGINE="xxx"
+export OPENAI_ENGINE="xxx"
+
+export GRAPHD_HOST=""
+export GRAPHD_PORT="9669"
+export NEBULA_USER="root"
+export NEBULA_PASSWORD="nebula"
+export NEBULA_ADDRESS=$GRAPHD_HOST:$GRAPHD_PORT
