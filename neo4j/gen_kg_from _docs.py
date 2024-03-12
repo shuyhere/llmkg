@@ -53,17 +53,23 @@ def main(input_file_path, llm, graph,max_attempts=3):
                     return
 
 if __name__ == "__main__":
-
+    load_dotenv()
     # connect to the local graph client
     # also can use cloud: https://neo4j.com/cloud/platform/aura-graph-database/?ref=blog.langchain.dev
 
-    url = "bolt://0.0.0.0:7687"
-    username = "neo4j"
-    password = "12345678"
+    # url = "bolt://0.0.0.0:7687"
+    # username = "neo4j"
+    # password = "12345678"
+
+    url = os.getenv("NEO4J_URL")
+    username = os.getenv("NEO4J_USERNAME")
+    password = os.getenv("NEO4J_PASSWORD")
+
     graph = Neo4jGraph(
         url=url,
         username=username,
-        password=password
+        password=password,
+        database="neo4j"
     )
 
     # optional
@@ -71,7 +77,6 @@ if __name__ == "__main__":
     # allowed_rels =[]
 
     # connect to your llm client
-    load_dotenv()
     openai_api_base = os.getenv(" ")
     openai_api_key = os.getenv("OPENAI_API_KEY")
     llm = ChatOpenAI(model="gpt-3.5-turbo-16k", temperature=0.1, openai_api_base=openai_api_base,
