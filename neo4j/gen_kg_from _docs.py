@@ -28,7 +28,6 @@ def main(input_file_path, llm, graph,max_attempts=3):
     data = loder.load()
     text_splitter =CharacterTextSplitter.from_tiktoken_encoder(chunk_size=512, chunk_overlap=50)
     documents = text_splitter.split_documents(data)
-    print(documents[0].page_content)
     # Load the checkpoint if it exists
     checkpoint_file = 'checkpoint.json'
     if os.path.exists(checkpoint_file):
@@ -77,13 +76,22 @@ if __name__ == "__main__":
     # allowed_rels =[]
 
     # connect to your llm client
-    openai_api_base = os.getenv(" ")
+
+    openai_api_base = os.getenv("OPENAI_API_BASE")
     openai_api_key = os.getenv("OPENAI_API_KEY")
-    llm = ChatOpenAI(model="gpt-3.5-turbo-16k", temperature=0.1, openai_api_base=openai_api_base,
+
+    os.environ['LANGCHAIN_TRACING_V2'] = os.getenv("LANGCHAIN_TRACING_V2")
+
+    os.environ['LANGCHAIN_API_KEY'] = os.getenv("LANGCHAIN_API_KEY")
+
+    # llm = ChatOpenAI(model="gpt-3.5-turbo-16k", temperature=0.1, openai_api_base=openai_api_base,
+    #                  openai_api_key=openai_api_key)
+
+    llm = ChatOpenAI(model="qwen:1.8b-chat", temperature=0.1, openai_api_base=openai_api_base,
                      openai_api_key=openai_api_key)
 
 
-    input_file_path = "/Users/shuyang/Desktop/shucode/llmresearch/llmkg/test_data/专利分类.csv"
+    input_file_path = "../test_data/2-3.csv"
 
     main(input_file_path,llm,graph,max_attempts=3)
 

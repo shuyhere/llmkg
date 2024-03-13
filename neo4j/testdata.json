@@ -1,0 +1,513 @@
+{
+  "nodes": [
+    {
+      "id": "CN214341210U",
+      "label": "专利",
+      "attributes": {
+        "公开(公告)号": "CN214341210U"
+      }
+    },
+    {
+      "id": "竹椅",
+      "label": "竹椅",
+      "attributes": {
+        "标题": "一种具有人机交互功能的竹椅"
+      }
+    },
+    {
+      "id": "授权",
+      "label": "法律状态/事件",
+      "attributes": {
+        "法律状态/事件": "授权"
+      }
+    },
+    {
+      "id": "智能家居技术领域",
+      "label": "技术领域",
+      "attributes": {
+        "技术领域": "智能家居技术领域"
+      }
+    },
+    {
+      "id": "按键输入模块",
+      "label": "按键输入模块",
+      "attributes": {}
+    },
+    {
+      "id": "语音输入模块",
+      "label": "语音输入模块",
+      "attributes": {}
+    },
+    {
+      "id": "语音提醒模块",
+      "label": "语音提醒模块",
+      "attributes": {}
+    },
+    {
+      "id": "音乐模块",
+      "label": "音乐模块",
+      "attributes": {}
+    },
+    {
+      "id": "室外空气检测模块",
+      "label": "室外空气检测模块",
+      "attributes": {}
+    },
+    {
+      "id": "显示模块",
+      "label": "显示模块",
+      "attributes": {}
+    },
+    {
+      "id": "定位模块",
+      "label": "定位模块",
+      "attributes": {}
+    },
+    {
+      "id": "室内气体检测模块",
+      "label": "室内气体检测模块",
+      "attributes": {}
+    },
+    {
+      "id": "控制模块",
+      "label": "控制模块",
+      "attributes": {}
+    },
+    {
+      "id": "一氧化碳传感器",
+      "label": "一氧化碳传感器",
+      "attributes": {}
+    },
+    {
+      "id": "烟雾感应器",
+      "label": "烟雾感应器",
+      "attributes": {}
+    },
+    {
+      "id": "通信模块",
+      "label": "通信模块",
+      "attributes": {}
+    },
+    {
+      "id": "红外传感器",
+      "label": "红外传感器",
+      "attributes": {}
+    },
+    {
+      "id": "光敏开关",
+      "label": "光敏开关",
+      "attributes": {}
+    },
+    {
+      "id": "照明模块",
+      "label": "照明模块",
+      "attributes": {}
+    },
+    {
+      "id": "80C51单片机",
+      "label": "80C51单片机",
+      "attributes": {}
+    },
+    {
+      "id": "蓝牙单元",
+      "label": "蓝牙单元",
+      "attributes": {}
+    },
+    {
+      "id": "WIFI单元",
+      "label": "WIFI单元",
+      "attributes": {}
+    },
+    {
+      "id": "手机",
+      "label": "手机",
+      "attributes": {}
+    },
+    {
+      "id": "语音采集单元",
+      "label": "语音采集单元",
+      "attributes": {}
+    },
+    {
+      "id": "语音处理单元",
+      "label": "语音处理单元",
+      "attributes": {}
+    }
+  ],
+  "relationships": [
+    {
+      "startNode": "CN214341210U",
+      "endNode": "竹椅",
+      "type": "包括",
+      "attributes": {}
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "按键输入模块",
+      "type": "包括",
+      "attributes": {}
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "语音输入模块",
+      "type": "包括",
+      "attributes": {}
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "语音提醒模块",
+      "type": "包括",
+      "attributes": {}
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "音乐模块",
+      "type": "包括",
+      "attributes": {}
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "室外空气检测模块",
+      "type": "包括",
+      "attributes": {}
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "显示模块",
+      "type": "包括",
+      "attributes": {}
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "定位模块",
+      "type": "包括",
+      "attributes": {}
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "室内气体检测模块",
+      "type": "包括",
+      "attributes": {}
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "控制模块",
+      "type": "包括",
+      "attributes": {}
+    },
+    {
+      "startNode": "室内气体检测模块",
+      "endNode": "一氧化碳传感器",
+      "type": "包括",
+      "attributes": {}
+    },
+    {
+      "startNode": "室内气体检测模块",
+      "endNode": "烟雾感应器",
+      "type": "包括",
+      "attributes": {}
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "通信模块",
+      "type": "包括",
+      "attributes": {}
+    },
+    {
+      "startNode": "控制模块",
+      "endNode": "蓝牙单元",
+      "type": "通过",
+      "attributes": {}
+    },
+    {
+      "startNode": "控制模块",
+      "endNode": "WIFI单元",
+      "type": "通过",
+      "attributes": {}
+    },
+    {
+      "startNode": "控制模块",
+      "endNode": "手机",
+      "type": "通过",
+      "attributes": {}
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "红外传感器",
+      "type": "包括",
+      "attributes": {}
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "光敏开关",
+      "type": "包括",
+      "attributes": {}
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "照明模块",
+      "type": "包括",
+      "attributes": {}
+    },
+    {
+      "startNode": "控制模块",
+      "endNode": "80C51单片机",
+      "type": "为",
+      "attributes": {}
+    },
+    {
+      "startNode": "通信模块",
+      "endNode": "蓝牙单元",
+      "type": "包括",
+      "attributes": {}
+    },
+    {
+      "startNode": "通信模块",
+      "endNode": "WIFI单元",
+      "type": "包括",
+      "attributes": {}
+    },
+    {
+      "startNode": "控制模块",
+      "endNode": "语音采集单元",
+      "type": "通过",
+      "attributes": {}
+    },
+    {
+      "startNode": "语音采集单元",
+      "endNode": "语音处理单元",
+      "type": "连接",
+      "attributes": {}
+    },
+    {
+      "startNode": "语音处理单元",
+      "endNode": "控制模块",
+      "type": "连接",
+      "attributes": {}
+    }
+  ]
+}
+
+
+data = {'input':'xx','text':{
+  "nodes": [
+    {
+      "id": "CN214341247U",
+      "label": "专利",
+      "attributes": {
+        "公开(公告)号": "CN214341247U"
+      }
+    },
+    {
+      "id": "竹椅",
+      "label": "竹椅",
+      "attributes": {
+        "标题": "一种具有紧急报警功能的竹椅"
+      }
+    },
+    {
+      "id": "智能家居技术领域",
+      "label": "技术领域",
+      "attributes": {
+        "描述": "智能家居技术领域"
+      }
+    },
+    {
+      "id": "压力传感器",
+      "label": "压力传感器"
+    },
+    {
+      "id": "倾角传感器",
+      "label": "倾角传感器"
+    },
+    {
+      "id": "计时模块",
+      "label": "计时模块"
+    },
+    {
+      "id": "语音提醒模块",
+      "label": "语音提醒模块"
+    },
+    {
+      "id": "语音采集模块",
+      "label": "语音采集模块"
+    },
+    {
+      "id": "警示模块",
+      "label": "警示模块"
+    },
+    {
+      "id": "定位模块",
+      "label": "定位模块"
+    },
+    {
+      "id": "气体检测模块",
+      "label": "气体检测模块"
+    },
+    {
+      "id": "控制模块",
+      "label": "控制模块"
+    },
+    {
+      "id": "一氧化碳传感器",
+      "label": "一氧化碳传感器"
+    },
+    {
+      "id": "烟雾感应器",
+      "label": "烟雾感应器"
+    },
+    {
+      "id": "通信模块",
+      "label": "通信模块"
+    },
+    {
+      "id": "红外传感器",
+      "label": "红外传感器"
+    },
+    {
+      "id": "光敏开关",
+      "label": "光敏开关"
+    },
+    {
+      "id": "照明模块",
+      "label": "照明模块"
+    },
+    {
+      "id": "扬声器",
+      "label": "扬声器"
+    },
+    {
+      "id": "语音采集单元",
+      "label": "语音采集单元"
+    },
+    {
+      "id": "语音处理单元",
+      "label": "语音处理单元"
+    },
+    {
+      "id": "80C51单片机",
+      "label": "80C51单片机"
+    },
+    {
+      "id": "蓝牙单元",
+      "label": "蓝牙单元"
+    },
+    {
+      "id": "WIFI单元",
+      "label": "WIFI单元"
+    }
+  ],
+  "relationships": [
+    {
+      "startNode": "CN214341247U",
+      "endNode": "竹椅",
+      "type": "包括"
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "压力传感器",
+      "type": "包括"
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "倾角传感器",
+      "type": "包括"
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "计时模块",
+      "type": "包括"
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "语音提醒模块",
+      "type": "包括"
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "语音采集模块",
+      "type": "包括"
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "警示模块",
+      "type": "包括"
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "定位模块",
+      "type": "包括"
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "气体检测模块",
+      "type": "包括"
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "控制模块",
+      "type": "包括"
+    },
+    {
+      "startNode": "气体检测模块",
+      "endNode": "一氧化碳传感器",
+      "type": "包括"
+    },
+    {
+      "startNode": "气体检测模块",
+      "endNode": "烟雾感应器",
+      "type": "包括"
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "通信模块",
+      "type": "包括"
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "红外传感器",
+      "type": "包括"
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "光敏开关",
+      "type": "包括"
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "照明模块",
+      "type": "包括"
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "扬声器",
+      "type": "包括"
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "语音采集单元",
+      "type": "包括"
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "语音处理单元",
+      "type": "包括"
+    },
+    {
+      "startNode": "竹椅",
+      "endNode": "80C51单片机",
+      "type": "包括"
+    },
+    {
+      "startNode": "通信模块",
+      "endNode": "蓝牙单元",
+      "type": "包括"
+    },
+    {
+      "startNode": "通信模块",
+      "endNode": "WIFI单元",
+      "type": "包括"
+    }
+  ]
+}
+}

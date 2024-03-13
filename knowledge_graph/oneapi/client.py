@@ -1,18 +1,17 @@
 from openai import OpenAI
 
-# client = OpenAI(
-#     api_key="EMPTY",
-#     base_url="http://127.0.0.1:8000/v1/",
-# )
-
 client = OpenAI(
-    api_key="",
-	base_url="https://aigptx.top/v1/",
+    api_key="EMPTY",
+    base_url="http://127.0.0.1:8000/v1/",
 )
+
+# client = OpenAI(
+#     api_key="sk-",
+# 	base_url="https://aigptx.top/v1/",
+# )
 
 
 def generate(model_name, prompt, system=None, template=None, context=None, options=None, callback=None):
-
 # create a chat completion
 	completion = client.chat.completions.create(
 	model=model_name,
@@ -21,7 +20,11 @@ def generate(model_name, prompt, system=None, template=None, context=None, optio
 		{"role": "user", "content": prompt}]
 	)
 	# print the completion
-	response= completion.choices[0].message.content
+	response= completion.choices[0].message
 
 	return response
+
+if __name__ == "__main__":
+	response=generate("gpt-3.5-turbo-16k", "What is the capital of France?")
+	print(response)
 

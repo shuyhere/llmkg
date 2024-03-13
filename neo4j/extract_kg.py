@@ -3,16 +3,16 @@ from langchain_community.graphs.graph_document import (
     Relationship as BaseRelationship,
     GraphDocument,
 )
+from langchain.chains import LLMChain
 from langchain.chains.openai_functions import (
     create_openai_fn_chain,
     create_structured_output_chain,
 )
+from langchain.chains.structured_output import create_openai_fn_runnable,create_structured_output_runnable
 from langchain.schema import Document
 from typing import List, Dict, Any, Optional
 from langchain.pydantic_v1 import Field, BaseModel
-from langchain.chains.openai_functions import (
-    create_structured_output_runnable,
-)
+
 
 from langchain.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
@@ -21,6 +21,12 @@ class Property(BaseModel):
   """A single property consisting of key and value"""
   key: str = Field(..., description="key")
   value: str = Field(..., description="value")
+
+
+def attributes_to_properties(attributes):
+    if attributes is None:
+        return []
+    return [Property(key=k, value=v) for k, v in attributes.items()]
 
 class Node(BaseNode):
     properties: Optional[List[Property]] = Field(
@@ -112,8 +118,10 @@ Adhere to the rules strictly. Non-compliance will result in termination.
             ("human", "Use the given format to extract information from the following input: {input}"),
             ("human", "Tip: Make sure to answer in the correct format,and remember transfer the nodes and relationships to Chinese"),
         ])
-    return create_structured_output_chain(KnowledgeGraph, llm, prompt, verbose=False)
 
+    # return create_structured_output_chain(KnowledgeGraph, llm, prompt, verbose=False)
+    # return create_structured_output_runnable(KnowledgeGraph, llm, prompt,mode="openai-functions", enforce_function_usage=True, return_single=True)
+    return LLMChain(prompt=prompt, llm=llm)
 def extract_and_store_graph(
     document: Document,
     llm,
@@ -122,13 +130,33 @@ def extract_and_store_graph(
     rels:Optional[List[str]]=None) -> None:
     # Extract graph data using OpenAI functions
     extract_chain = get_extraction_chain(llm=llm,allowed_nodes=nodes,allowed_rels=rels)
-    data = extract_chain.invoke(document.page_content)['function']
-    # Construct a graph document
+
+    data=extract_chain.invoke(document.page_content)
+    node_and_rel = data['text']
+    print(data)
+
+    nodes = [Node(id=node['id'], label=node['label'], properties=attributes_to_properties(node.get('attributes', {}))) for node
+             in node_and_rel["nodes"]]
+    # nodes_dict = {node.id: node for node in nodes}
+
+    # relationships = [Relationship(source=Node(rel['startNode']), target=Node(rel['endNode']), type=rel['type']) for rel
+    #                  in data['text']["relationships"]]
+
+    # relationships = [
+    #     Relationship(source=nodes_dict[rel['startNode']], target=nodes_dict[rel['endNode']], type=rel['type']) for rel
+    #     in data['text']["relationships"]]
+
+    relationships = [Relationship(source=Node(id=rel['startNode']), target=Node(id=rel['endNode']), type=rel['type'])
+                     for rel in node_and_rel["relationships"]]
+
+    KG = KnowledgeGraph(nodes=nodes, rels=relationships)
     graph_document = GraphDocument(
-      nodes = [map_to_base_node(node) for node in data.nodes],
-      relationships = [map_to_base_relationship(rel) for rel in data.rels],
+      nodes = [map_to_base_node(node) for node in KG.nodes],
+      relationships = [map_to_base_relationship(rel) for rel in KG.rels],
       source = document
     )
-    # Store information into a graph
+    # print(graph_document)
+
+    # # Store information into a graph
     graph.add_graph_documents([graph_document])
 
